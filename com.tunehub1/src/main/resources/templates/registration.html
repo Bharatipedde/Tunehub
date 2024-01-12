@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub Registration Page </title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<form action="register" method="post">
+<table>
+<tr>
+<td><label>user name : </label></td>
+<td><input type="text" name="username"></td>
+</tr>
+<br>
+<tr>
+<td><label>email</label></td>
+<td><input type="email" name="email"></td>
+</tr>
+<br>
+<tr>
+<td><label>password</label></td>
+<td><input type="password" name="password"></td>
+</tr>
+<br>
+<tr>
+<td><label>gender</label></td>
+<td>M<input type="radio" name="gender" value="male">
+F<input type="radio" name="gender" value="female">
+O<input type="radio" name="gender" value="other"></td>
+</tr>
+<br>
+
+<tr>
+<td><label>role</label></td>
+<td>Admin<input type="radio" name="role" value="admin">
+Customer<input type="radio" name="role" value="customer"></td>
+</tr>
+<br>
+
+<tr>
+<td><label>address : </label></td>
+<td><textarea name="address"></textarea></td>
+<br>
+</tr>
+
+<tr>
+<td><input type="submit" value="register"></td>
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>
